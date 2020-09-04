@@ -27,7 +27,12 @@
 
 
 .position {
-  padding:0 30px;
+    width: 100%;
+    margin: auto;
+    font-family: 'Manrope', sans-serif;
+    flex-wrap: wrap;
+    background-color: var(--color_1);
+    padding:0 30px;
 }
 
 
@@ -83,17 +88,11 @@ header h1{
 }
 
 
-.navbar_header{
-  width:100%;
-  
-}
-
 
 .navbar_header ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  
   
 }
 
@@ -103,6 +102,7 @@ header h1{
   font-family: 'Dancing Script', cursive;
   color:var(--color_1);
   font-size: 2rem; 
+  
 }
 
 
@@ -241,14 +241,9 @@ justify-content: flex-end;
 /*********************************    main      **********************************/
 
 main{
-  background: url(../images/plan.jpg)no-repeat fixed;
 }
 
-.position{
-  width:100%;
-  
-  
-}
+
 
 #video{
   width:100%;
@@ -284,30 +279,14 @@ main{
 
 /************Footer*************/
 
-
-.wrapper {
-  width: 100%;
-  margin: auto;
-  font-family: 'Manrope', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: rgb(39, 39, 39);
-
-}
-
-
 .footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 30px;
 }
 
-.footer .aPropos {
-  width: 50%;
-  color:var(--color_1);
-}
+
 
 .aPropos span {
   color: #e07e15;
@@ -315,14 +294,17 @@ main{
   font-style: italic;
 }
 
-.footnav h4 {
-  color: var(--color_1);
+.footnav h2 {
+  font-family: 'Dancing Script', cursive;
+  color: black;
   font-weight: bold;
 
 }
 
 .footnav ul {
-  padding: 0;
+  display:flex;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 
 .footnav a:hover{
@@ -336,9 +318,14 @@ footer a,
 li {
   list-style: none;
   text-decoration: none;
-  line-height: 30px;
-  color:var(--color_1);
+  color:black;
+  font-family: 'Dancing Script', cursive;
+  padding-right:30px;
 }
+.footnav2 h2{
+  padding: 0 0 20px 0;
+}
+
 
 #button {
   width: 120px;
@@ -350,13 +337,12 @@ li {
   text-align: center;
 
 }
+/***************  Social Network  ***************/
 
 
-
-/*********Mentions Légales*******************/
+/*********  Mentions Légales  *******************/
 
 #cgv {
-  background-color: rgb(28, 29, 30);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -368,7 +354,7 @@ li {
   margin: 0;
   padding: 0;
   font-size: 0.75rem;
-  padding: 20px;
+  
 }
 
 #footer_footer_nom_du_site {
@@ -387,7 +373,7 @@ li {
 }
 
 #creation {
-  color: white;
+  color: black;
 }
 
 
