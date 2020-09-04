@@ -105,6 +105,10 @@ header h1{
   
 }
 
+.navbar_header :nth-child(2){
+  text-decoration: underline;
+}
+
 
 
 /**********************  effet reflet  ***********************/
@@ -289,6 +293,7 @@ article a{
   display: flex;
   justify-content: space-between;
   padding: 30px;
+  font-family: 'Dancing Script', cursive;
 }
 
 
@@ -299,12 +304,6 @@ article a{
   font-style: italic;
 }
 
-.footnav h2 {
-  font-family: 'Dancing Script', cursive;
-  color: black;
-  font-weight: bold;
-
-}
 
 .footnav ul {
   display:flex;
@@ -314,7 +313,11 @@ article a{
 
 .footnav a:hover{
   text-decoration: underline;
-  
+}
+
+
+footer a{
+  padding-right:30px;
 }
 
 
@@ -324,10 +327,10 @@ li {
   list-style: none;
   text-decoration: none;
   color:black;
-  font-family: 'Dancing Script', cursive;
-  padding-right:30px;
+  
 }
-.footnav2 h2{
+
+.footnav2 h2, .reseaux h2{
   padding: 0 0 20px 0;
 }
 
@@ -343,6 +346,13 @@ li {
 
 }
 /***************  Social Network  ***************/
+
+.reseaux i{
+  display:inline-block;
+}
+
+
+
 .gg-facebook {
   box-sizing: border-box;
   position: relative;
