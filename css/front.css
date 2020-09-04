@@ -285,7 +285,7 @@ justify-content: flex-end;
 
 
 
-.aPropos span {
+#footer_footer_nom_du_site {
   color: #e07e15;
   font-weight: bold;
   font-style: italic;
@@ -305,7 +305,7 @@ justify-content: flex-end;
 }
 
 .footnav a:hover{
-  transform: scale(1.1);
+  text-decoration: underline;
   
 }
 
