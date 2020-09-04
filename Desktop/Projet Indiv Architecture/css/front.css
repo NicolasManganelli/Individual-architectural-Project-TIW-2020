@@ -1,0 +1,393 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+/***********************     Sommaire       *********************
+
+1 - Header 
+1 - Header 
+1 - Header 
+1 - Header 
+1 - Header 
+
+
+****************************************************************/
+
+
+
+/********  GLOBAL  ********/
+
+.body{
+  font-family: 'Manrope', sans-serif;
+}
+
+
+.position {
+  padding:0 30px;
+}
+
+
+
+
+
+
+/***********************     Variables       *********************/
+
+:root{
+  --color_1:#c3c3c3;
+  --color_2: #e07e15;
+  --color_3:#387cf8;
+  
+}
+
+/*****************************************************************/
+
+
+
+
+/********  1 - Header  ********/
+
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(92, 33, 38, 0.815);
+  border-top: solid 5px var(--color_2);
+  border-bottom: solid 5px var(--color_3);
+  padding:30px 10px;
+  width:100%;
+  position:fixed;
+}
+
+
+header h1{
+  font-family: 'Dancing Script', cursive;
+  font-size:3rem;
+  text-transform: uppercase;
+  color:var(--color_1);
+  width:100%;
+}
+
+
+#h{
+  
+  color:var(--color_2)
+}
+
+#t{
+  color:var(--color_3);
+}
+
+
+.navbar_header{
+  width:100%;
+  
+}
+
+
+.navbar_header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+
+.navbar_header a {
+  text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  color:var(--color_1);
+  font-size: 2rem; 
+}
+
+
+
+/**********************  effet reflet  ***********************/
+.navbar_header .shine div{
+	position: relative;
+}
+
+.shine div a::before {
+  content: '';
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.shine div a:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
+/**************  Formulaire de recherche  **************/
+
+.formulaire_recherche{
+width:100%;
+display: flex;
+justify-content: flex-end;
+}
+
+#site-search{
+   width:50%;
+   
+}
+
+
+.formulaire_recherche button{
+  color:var(--color_1);
+  display:inline-block;
+  width:10%;
+  margin-left:20px;
+  border-radius: 20px;
+  color:black;
+  font-family: 'Dancing Script', cursive;
+  font-size:1rem;
+}
+
+
+/********************************  Slider  ***********************************/
+
+.img1 {
+  background: url(../images/coliseum3.jpg);
+  height: 108rem;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+.box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 82rem;
+  height: 45rem;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+  color: white;
+  line-height: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 100;
+  padding: 3.5rem;
+}
+
+
+
+/* Deuxieme section */
+
+.img2 {
+  background: url(../images/coliseum5.jpg);
+  height: 108rem;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+/* Troisieme section */
+
+.img3 {
+  background: url(../images/coliseum7.jpg);
+  height: 108rem;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+/* Animation */
+
+.box1 {
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+.box2 {
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+.box3 {
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+/*********************************    main      **********************************/
+
+main{
+  background: url(../images/plan.jpg)no-repeat fixed;
+}
+
+.position{
+  width:100%;
+  
+  
+}
+
+#video{
+  width:100%;
+  padding:20px;
+  display:flex;
+  
+}
+
+
+#video h1{
+  width:100%;
+  font-family: 'Dancing Script', cursive;
+  font-size:2.5rem;
+  
+}
+
+
+#video p{
+  padding:100px 70px;
+  line-height: 25px;
+}
+
+#video a{
+  background: tomato;
+  padding:8px;
+  text-decoration: none;
+  color:var(--color_1);
+  text-transform: uppercase;
+  border-radius: 12px;
+  display:block;
+
+}
+
+/************Footer*************/
+
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgb(39, 39, 39);
+
+}
+
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.footer .aPropos {
+  width: 50%;
+  color:var(--color_1);
+}
+
+.aPropos span {
+  color: #e07e15;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.footnav h4 {
+  color: var(--color_1);
+  font-weight: bold;
+
+}
+
+.footnav ul {
+  padding: 0;
+}
+
+.footnav a:hover{
+  transform: scale(1.1);
+  
+}
+
+
+footer a,
+.footnav2,
+li {
+  list-style: none;
+  text-decoration: none;
+  line-height: 30px;
+  color:var(--color_1);
+}
+
+#button {
+  width: 120px;
+  background-color: rgb(231, 231, 231);
+  color: grey;
+  border: 2px solid rgb(187, 187, 187);
+  border-radius: 20px;
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+
+
+/*********Mentions Légales*******************/
+
+#cgv {
+  background-color: rgb(28, 29, 30);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#cgv>p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.75rem;
+  padding: 20px;
+}
+
+#footer_footer_nom_du_site {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #e07e15;
+}
+
+#logo_footer {
+  color: red;
+}
+
+#mention_legale a {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+#creation {
+  color: white;
+}
+
+
