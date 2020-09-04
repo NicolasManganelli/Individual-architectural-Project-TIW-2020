@@ -65,7 +65,7 @@ header{
   border-bottom: solid 5px var(--color_3);
   padding:30px 10px;
   width:100%;
-  position:fixed;
+  
 }
 
 
@@ -242,14 +242,19 @@ justify-content: flex-end;
 
 
 /************************  1er Article  ***********************/
-#video{
+article{
   padding:20px;
   display:flex;
   
 }
 
+article video{
+width:50%;
 
-#video h1{
+}
+
+
+article h1{
   width:100%;
   font-family: 'Dancing Script', cursive;
   font-size:2.5rem;
@@ -257,12 +262,13 @@ justify-content: flex-end;
 }
 
 
-#video p{
+article p{
+  width:50%;
   padding:100px 70px;
   line-height: 25px;
 }
 
-#video a{
+article a{
   background: tomato;
   padding:8px;
   text-decoration: none;
