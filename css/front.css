@@ -241,7 +241,7 @@ justify-content: flex-end;
 /*********************************    main      **********************************/
 
 
-/************************  Article  ***********************/
+/************************  1er Article  ***********************/
 #video{
   padding:20px;
   display:flex;
@@ -269,7 +269,7 @@ justify-content: flex-end;
   color:var(--color_1);
   text-transform: uppercase;
   border-radius: 12px;
-  display:block;
+  
 
 }
 
@@ -345,7 +345,9 @@ li {
   justify-content: center;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  padding-bottom:20px;
 }
+
 
 #cgv>p {
   margin: 0;
