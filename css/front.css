@@ -93,7 +93,7 @@ header h1{
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 
@@ -151,7 +151,7 @@ justify-content: flex-end;
 }
 
 #site-search{
-   width:50%;
+   width:40%;
    
 }
 
@@ -240,13 +240,9 @@ justify-content: flex-end;
 
 /*********************************    main      **********************************/
 
-main{
-}
-
 
 
 #video{
-  width:100%;
   padding:20px;
   display:flex;
   
