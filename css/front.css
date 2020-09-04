@@ -241,7 +241,7 @@ justify-content: flex-end;
 /*********************************    main      **********************************/
 
 
-
+/************************  Article  ***********************/
 #video{
   padding:20px;
   display:flex;
@@ -272,6 +272,7 @@ justify-content: flex-end;
   display:block;
 
 }
+
 
 /************Footer*************/
 
