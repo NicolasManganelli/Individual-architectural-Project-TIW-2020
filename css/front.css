@@ -253,34 +253,34 @@ article{
   
 }
 
-article video{
-width:50%;
-
-}
 
 
-article h1{
+.photo h1{
   width:100%;
   font-family: 'Dancing Script', cursive;
   font-size:2.5rem;
-  
+  padding:20px 0;
 }
 
 
-article p{
-  width:50%;
-  padding:100px 70px;
+article .paragraphe{
+  width:60%;
   line-height: 25px;
+  padding:100px 50px;
 }
+
 
 article a{
-  background: tomato;
-  padding:8px;
+  background: rgba(75, 32, 35, 0.575);
+  padding:5px;
   text-decoration: none;
   color:var(--color_1);
   text-transform: uppercase;
-  border-radius: 12px;
-  
+  border-radius: 20px;
+  display:block;
+  width:100px;
+  margin-top:50px;
+  text-align: center;
 
 }
 
