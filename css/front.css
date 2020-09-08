@@ -319,6 +319,8 @@ article .photo2{
   
 
 }
+
+/******************************  Logo localisation  **********************/
 .gg-track {
   box-sizing: border-box;
   position: relative;
@@ -357,7 +359,7 @@ article .photo2{
   top: -6px
 }
 
-/************Footer*************/
+/*********************************  Footer  ********************************/
 
 .footer {
   box-shadow: 2px -4px 4px grey;
