@@ -9,10 +9,9 @@
 /***********************     Sommaire       *********************
 
 1 - Header 
-1 - Header 
-1 - Header 
-1 - Header 
-1 - Header 
+2 - Slider 
+3 - Main
+4 - Footer
 
 
 ****************************************************************/
@@ -22,7 +21,7 @@
 /********  GLOBAL  ********/
 
 .body{
-  font-family: 'Manrope', sans-serif;
+  font-family:var(--font_2);
 }
 
 
@@ -43,11 +42,14 @@
 /***********************     Variables       *********************/
 
 :root{
-  --color_1:#dfdede;
+  --color_1:#f1eeee;
   --color_2: #e07e15;
   --color_3:#387cf8;
-  
+  --font_1:'Dancing Script', cursive;
+  --font_2:
 }
+
+
 
 /*****************************************************************/
 
@@ -66,11 +68,12 @@ header{
   padding:30px 10px;
   width:100%;
   position:fixed;
+  z-index:20;
 }
 
 
 header h1{
-  font-family: 'Dancing Script', cursive;
+  font-family: var(--font_1);
   font-size:3rem;
   text-transform: uppercase;
   color:var(--color_1);
@@ -99,7 +102,7 @@ header h1{
 
 .navbar_header a {
   text-decoration: none;
-  font-family: 'Dancing Script', cursive;
+  font-family: var(--font_1);
   color:var(--color_1);
   font-size: 2rem; 
   
@@ -111,7 +114,7 @@ header h1{
 
 
 
-/**********************  effet reflet  ***********************/
+/**********************  effet reflet sur la nav ***********************/
 .navbar_header .shine div{
 	position: relative;
 }
@@ -167,12 +170,15 @@ justify-content: flex-end;
   margin-left:20px;
   border-radius: 20px;
   color:black;
-  font-family: 'Dancing Script', cursive;
+  font-family:var(--font_1);
   font-size:1rem;
 }
 
 
-/********************************  Slider  ***********************************/
+/********************************  2 - Slider  ***********************************/
+
+
+
 
 .img1 {
   background: url(../images/coliseum3.jpg);
@@ -183,25 +189,7 @@ justify-content: flex-end;
 }
 
 
-.box {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 82rem;
-  height: 45rem;
-  text-align: center;
-  background: rgba(0,0,0,0.3);
-  color: white;
-  line-height: 1.5rem;
-  font-family: sans-serif;
-  font-weight: 100;
-  padding: 3.5rem;
-}
 
-
-
-/* Deuxieme section */
 
 .img2 {
   background: url(../images/coliseum5.jpg);
@@ -212,7 +200,7 @@ justify-content: flex-end;
 }
 
 
-/* Troisieme section */
+
 
 .img3 {
   background: url(../images/coliseum7.jpg);
@@ -223,7 +211,7 @@ justify-content: flex-end;
 }
 
 
-/* Animation */
+/********************* Animation slider ********************/
 
 .box1 {
   opacity: 0;
@@ -242,7 +230,7 @@ justify-content: flex-end;
   opacity: 1;
 }
 
-/*********************************    main      **********************************/
+/*********************************  3 - Main   **********************************/
 
 
 /************************  1er Article  ***********************/
@@ -254,16 +242,18 @@ article{
 }
 
 
-
 .photo h2{
   width:100%;
-  font-family: 'Dancing Script', cursive;
+  font-family:var(--font_1);
   font-size:2.5rem;
   padding:20px 0;
 }
 
+.shadow_img{
+  box-shadow:4px 4px 20px 1px rgb(63, 62, 62);
+}
 
-.paragraphe{
+.paragraphe{    
   width:60%;
   line-height: 25px;
   padding:150px 50px;
@@ -273,6 +263,7 @@ article{
   margin-bottom:10px;
 }
 
+/************************* effet texte caché ***********************/
 #opacity{
   display:block;
   position:absolute;
@@ -298,7 +289,7 @@ article{
   display:none;
 }
 
-
+/*******************************/
 
 article a{
   background: rgba(75, 32, 35, 0.575);
@@ -313,7 +304,7 @@ article a{
   text-align: center;
 
 }
-/*******************************  2ème article  ******************************/
+/**************************  2ème article  **************************/
 
 article .photo2{
   position: relative;
@@ -321,7 +312,7 @@ article .photo2{
 
 .photo2 h2{
   width:100%;
-  font-family: 'Dancing Script', cursive;
+  font-family:var(--font_1);
   font-size:2.5rem;
   padding:20px 0;
 }
@@ -340,24 +331,22 @@ article .photo2{
 
 .paragraphe2 span{
   font-style:italic;
-  font-size: 13px;
+  font-size: 12px;
 }
 
-.localisation{
-  position:absolute;
-  bottom:0;
-  
-
+.icon_size{
+  width:20px;
+  height:20px;
 }
 
-/******************************  Logo localisation  **********************/
+/******************************  Icon localisation  **********************/
 .gg-track {
   box-sizing: border-box;
   position: relative;
   display: block;
   transform: scale(var(--ggs,1));
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border: 2px solid transparent;
   box-shadow:
       0 0 0 2px,
@@ -388,8 +377,17 @@ article .photo2{
   left: 2px;
   top: -6px
 }
+.localisation{
+  position:absolute;
+  color:red;
+}
 
-/*********************************  Footer  ********************************/
+.gg-track{
+  left: -327px;
+  bottom: 95px;
+  
+}
+/*********************************  4 - Footer  ********************************/
 
 .footer {
   box-shadow: 2px -4px 4px grey;
@@ -397,13 +395,14 @@ article .photo2{
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  font-family: 'Dancing Script', cursive;
+  font-family:var(--font_1);
+  font-size:1.2rem;
 }
 
 
 
 #footer_footer_nom_du_site {
-  color: #e07e15;
+  color: var(--color_2);
   font-weight: bold;
   font-style: italic;
 }
@@ -454,9 +453,6 @@ li {
 .reseaux i{
   display:inline-block;
 }
-
-
-
 .gg-facebook {
   box-sizing: border-box;
   position: relative;
@@ -488,6 +484,8 @@ li {
   left: 4px;
   transform: skew(-5deg)
 }
+
+
 
 
 
@@ -531,6 +529,8 @@ li {
 
 
 
+
+
 .gg-instagram {
   box-sizing: border-box;
   position: relative;
@@ -565,14 +565,16 @@ li {
   right: 1px;
   top: 1px
 }
-/*********  Mentions Légales  *******************/
+
+
+/**************************  Mentions Légales  ***********************/
 
 #cgv {
   width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font_2);
   padding-bottom:20px;
 }
 
@@ -587,7 +589,7 @@ li {
 #footer_footer_nom_du_site {
   text-transform: uppercase;
   font-weight: bold;
-  color: #e07e15;
+  color: var(--color_2);
 }
 
 #logo_footer {
@@ -595,7 +597,7 @@ li {
 }
 
 #mention_legale a {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font_2);
 
 }
 
