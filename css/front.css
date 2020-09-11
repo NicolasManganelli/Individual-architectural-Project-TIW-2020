@@ -315,6 +315,7 @@ justify-content: flex-end;
 
 }
 /**************************  2ème article  **************************/
+
 #article_2{
   padding:20px;
   display:flex;
@@ -322,6 +323,17 @@ justify-content: flex-end;
   
 }
 
+#article_2:after{
+	content:"";
+	position:absolute;
+	z-index:1;
+	bottom:-30px;
+	left:50%;
+	transform:translate(-50%,0);
+	border-top: 30px solid var(--color_1);
+	border-left:60px solid transparent;
+  border-right:60px solid transparent;
+}
 
 #article_2 .photo2{
   position: relative;
@@ -404,6 +416,92 @@ justify-content: flex-end;
   bottom: 95px;
   
 }
+/******************************  Galerie Images  *******************************/
+#galerie{
+  width:100%;
+  padding:20px 20px;
+  background-color: var(--color_1);
+}
+
+#galerie img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+
+#galerie h2 {
+  margin-bottom: .5em;
+  font-family:var(--font_1);
+  font-size:2.5rem;
+  padding:20px 0;
+  text-align: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+  
+}
+
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90,0,10,0.4);
+  color: white;
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+
+/* for touch screen devices */
+@media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
+
+
+
 /*********************************  4 - Footer  ********************************/
 
 .footer {
