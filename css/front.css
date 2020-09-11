@@ -233,11 +233,12 @@ justify-content: flex-end;
 
 /************************  1er Article  ***********************/
 #article_1{
-  padding:20px 20px 0 20px;
+  padding:40px 20px 0 20px;
   display:flex;
   justify-content: space-between;
   background-color: var(--color_1);
   position:relative;
+  box-shadow:10px 40px 20px -30px rgb(116, 113, 113);
 }
 
 #article_1:after{
@@ -320,7 +321,8 @@ justify-content: flex-end;
   padding:20px;
   display:flex;
   justify-content: space-between;
-  
+  position:relative;
+  box-shadow:10px 40px 20px -40px rgb(116, 113, 113);
 }
 
 #article_2:after{
@@ -330,9 +332,10 @@ justify-content: flex-end;
 	bottom:-30px;
 	left:50%;
 	transform:translate(-50%,0);
-	border-top: 30px solid var(--color_1);
+	border-top: 30px solid white;
 	border-left:60px solid transparent;
   border-right:60px solid transparent;
+  
 }
 
 #article_2 .photo2{
@@ -419,8 +422,9 @@ justify-content: flex-end;
 /******************************  Galerie Images  *******************************/
 #galerie{
   width:100%;
-  padding:20px 20px;
+  padding:20px 20px 40px 20px;
   background-color: var(--color_1);
+  margin:auto;
 }
 
 #galerie img {
@@ -433,14 +437,15 @@ justify-content: flex-end;
   font-family:var(--font_1);
   font-size:2.5rem;
   padding:20px 0;
-  text-align: left;
+  
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1em;
-  
+  width:80%;
+  margin:auto;
 }
 
 
