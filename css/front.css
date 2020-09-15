@@ -76,6 +76,15 @@ header h1{
   text-transform: uppercase;
   color:var(--color_1);
   width:100%;
+  position:relative
+}
+
+header img{
+  position: absolute;
+  bottom:0;
+  left:20ch;
+  z-index:10;
+  width:100px;
 }
 
 
@@ -238,7 +247,7 @@ justify-content: flex-end;
   justify-content: space-between;
   background-color: var(--color_1);
   position:relative;
-  box-shadow:10px 40px 20px -30px rgb(116, 113, 113);
+  filter:drop-shadow(10px 40px 20px -40px rgba(116, 113, 113, 0.856) );
 }
 
 #article_1:after{
@@ -322,7 +331,7 @@ justify-content: flex-end;
   display:flex;
   justify-content: space-between;
   position:relative;
-  box-shadow:10px 40px 20px -40px rgb(116, 113, 113);
+  filter:drop-shadow(10px 40px 20px -40px rgba(116, 113, 113, 0.616) );
 }
 
 #article_2:after{
