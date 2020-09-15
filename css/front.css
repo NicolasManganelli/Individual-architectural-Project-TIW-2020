@@ -81,10 +81,11 @@ header h1{
 
 header img{
   position: absolute;
-  bottom:0;
-  left:20ch;
+  bottom:13px;
+  left:56ch;
   z-index:10;
-  width:100px;
+  width:55px;
+  transform: rotate(-20deg);
 }
 
 
