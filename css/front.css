@@ -41,10 +41,11 @@
 
 :root{
   --color_1:#f1eeee;
-  --color_2: #e07e15;
-  --color_3:#387cf8;
+  --color_2: red;
+  --color_3:#083ea3;
+  --color_4:rgba(75, 32, 35, 0.575);
   --font_1:'Dancing Script', cursive;
-  --font_2:
+  
 }
 
 
@@ -60,9 +61,9 @@ header{
   display:flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(75, 32, 35, 0.575);
-  border-top: solid 5px var(--color_2);
-  border-bottom: solid 5px var(--color_3);
+  background: var(--color_4);
+  border-top: solid 5px var(--color_3);
+  border-bottom: solid 5px var(--color_2);
   padding:30px 10px;
   width:100%;
   position:fixed;
@@ -91,11 +92,11 @@ header img{
 
 #h{
   
-  color:var(--color_2)
+  color:var(--color_3)
 }
 
 #t{
-  color:var(--color_3);
+  color:var(--color_2);
 }
 
 
@@ -185,9 +186,6 @@ justify-content: flex-end;
 
 /********************************  2 - Slider  ***********************************/
 
-
-
-
 .img1 {
   background: url(../images/coliseum3.jpg);
   height: 108rem;
@@ -197,8 +195,6 @@ justify-content: flex-end;
 }
 
 
-
-
 .img2 {
   background: url(../images/coliseum5.jpg);
   height: 108rem;
@@ -206,8 +202,6 @@ justify-content: flex-end;
   background-position: center;
   background-attachment: fixed;
 }
-
-
 
 
 .img3 {
@@ -248,7 +242,7 @@ justify-content: flex-end;
   justify-content: space-between;
   background-color: var(--color_1);
   position:relative;
-  filter:drop-shadow(10px 40px 20px -40px rgba(116, 113, 113, 0.856) );
+  filter: drop-shadow(3px 3px 4px grey);
 }
 
 #article_1:after{
@@ -261,6 +255,7 @@ justify-content: flex-end;
 	border-top: 30px solid var(--color_1);
 	border-left:60px solid transparent;
   border-right:60px solid transparent;
+  
 }
 
 .photo h2{
@@ -271,7 +266,7 @@ justify-content: flex-end;
 }
 
 .shadow_img{
-  box-shadow:4px 4px 20px 1px rgb(63, 62, 62);
+  box-shadow:4px 4px 10px 1px grey;
 }
 
 .paragraphe{    
@@ -313,18 +308,26 @@ justify-content: flex-end;
 /*******************************/
 
 #article_1 a{
-  background: rgba(75, 32, 35, 0.575);
-  padding:5px;
-  text-decoration: none;
-  color:var(--color_1);
-  text-transform: uppercase;
+  border: 2px solid rgba(75, 32, 35, 0.575);
   border-radius: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:var(--color_4);
+  font-weight: bold;
   display:block;
   width:100px;
   margin-top:50px;
   text-align: center;
-
 }
+
+
+#article_1 a:hover{
+  background: var(--color_4);
+  color:var(--color_1);
+}
+
+
+
 /**************************  2ème article  **************************/
 
 #article_2{
@@ -332,7 +335,7 @@ justify-content: flex-end;
   display:flex;
   justify-content: space-between;
   position:relative;
-  filter:drop-shadow(10px 40px 20px -40px rgba(116, 113, 113, 0.616) );
+  
 }
 
 #article_2:after{
@@ -390,9 +393,8 @@ justify-content: flex-end;
   width: 15px;
   height: 15px;
   border: 2px solid transparent;
-  box-shadow:
-      0 0 0 2px,
-      inset 0 0 0 10px;
+  box-shadow:0 0 0 2px,
+  inset 0 0 0 10px;
   border-radius: 100px
 }
 .gg-track::after,
@@ -425,7 +427,7 @@ justify-content: flex-end;
 }
 
 .gg-track{
-  left: -327px;
+  left: -380px;
   bottom: 95px;
   
 }
@@ -438,7 +440,7 @@ justify-content: flex-end;
 }
 
 #galerie img {
-  width: 100%; /* need to overwrite inline dimensions */
+  width: 100%;
   height: auto;
 }
 
@@ -459,7 +461,7 @@ justify-content: flex-end;
 }
 
 
-/* hover styles */
+
 .location-listing {
   position: relative;
 }
@@ -487,10 +489,8 @@ justify-content: flex-end;
   left: 0;
   opacity: 0;
   transition: opacity .5s;
-  background: rgba(90,0,10,0.4);
+  background: var(--color_4);
   color: white;
-  
-  /* position the text in t’ middle*/
   display: flex;
   align-items: center;
   justify-content: center;
