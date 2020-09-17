@@ -20,22 +20,24 @@
 
 /********  GLOBAL  ********/
 
-.body{
-  font-family:var(--font_2);
-}
-
-
 .position {
     width: 100%;
     margin: auto;
     font-family:var(--font_2);
+    font-size: 1.1rem;
     flex-wrap: wrap;
 }
 
+h2{
+  width:100%;
+  font-family:var(--font_1);
+  font-size:2.5rem;
+  padding:20px 0;
+}
 
-
-
-
+.position h2:first-letter{
+  color:red;
+}
 
 /***********************     Variables       *********************/
 
@@ -44,10 +46,10 @@
   --color_2: red;
   --color_3:#083ea3;
   --color_4:rgba(75, 32, 35, 0.575);
+  --color_5:white;
   --font_1:'Dancing Script', cursive;
   
 }
-
 
 
 /*****************************************************************/
@@ -93,7 +95,6 @@ header img{
   transform: rotate(-20deg);
 }
 
-
 h1:first-letter{
   color:var(--color_3)
 }
@@ -102,14 +103,12 @@ h1:first-letter{
   color:var(--color_2);
 }
 
-
 .navbar_header ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   width:35vw;
 }
-
 
 .navbar_header a {
   
@@ -123,8 +122,6 @@ h1:first-letter{
 .navbar_header :nth-child(2){
   border-bottom:2px solid var(--color_1);
 }
-
-
 
 /**********************  effet reflet sur la nav ***********************/
 .navbar_header .shine div{
@@ -174,14 +171,11 @@ justify-content: flex-end;
   display: block;
   border:none;
   height:30px;
-   width:50%;
-   border-radius: 5px;
+  width:50%;
+  border-radius: 5px;
 }
 
-
-
 .formulaire_recherche button{
-  
   display:inline-block;
   width:8%;
   margin-left:8px;
@@ -229,7 +223,7 @@ justify-content: flex-end;
 }
 
 
-/********************* Animation slider ********************/
+/*********************  Animation slider  ********************/
 
 .box1 {
   opacity: 0;
@@ -248,17 +242,54 @@ justify-content: flex-end;
   opacity: 1;
 }
 
-/*********************************  3 - Main   **********************************/
+/************************  3 - Main   *************************/
+
+/************************  Article 0  *************************/
+#article_0{
+  padding:20px 80px 40px 50px;
+  background-color: var(--color_5);
+  position:relative;
+  z-index:100;
+  filter: drop-shadow(3px 3px 4px grey);
+}
+
+#article_0:after{
+	content:"";
+	position:absolute;
+	z-index:20;
+	bottom:-30px;
+	left:50%;
+	transform:translate(-50%,0);
+	border-top: 30px solid var(--color_5);
+	border-left:60px solid transparent;
+  border-right:60px solid transparent;
+  
+}
+
+#article_0 img{
+  float:left;
+  padding:20px;
+
+}
+
+
+#article_0 p{
+  padding:10px;
+  
+}
+
+
+
 
 
 /************************  1er Article  ***********************/
 #article_1{
-  padding:40px 50px 0 50px;
+  padding:20px 50px 0 50px;
   display:flex;
   justify-content: space-between;
   background-color: var(--color_1);
   position:relative;
-  z-index:100;
+  z-index:50;
   filter: drop-shadow(3px 3px 4px grey);
 }
 
@@ -275,12 +306,7 @@ justify-content: flex-end;
   
 }
 
-.zone_1 h2{
-  width:100%;
-  font-family:var(--font_1);
-  font-size:2.5rem;
-  padding:20px 0;
-}
+
 
 .shadow_img{
   box-shadow:4px 4px 10px 1px grey;
@@ -352,9 +378,9 @@ justify-content: flex-end;
   display:flex;
   z-index: 10;
   justify-content: space-between;
-  background-color: white;
+  background-color: var(--color_5);
   position:relative;
-  filter: drop-shadow(0px 0px 4px grey);
+  filter: drop-shadow(3px 3px 4px grey);
 }
 
 
@@ -365,7 +391,7 @@ justify-content: flex-end;
 	bottom:-30px;
 	left:50%;
 	transform:translate(-50%,0);
-	border-top: 30px solid white;
+	border-top: 30px solid var(--color_5);
 	border-left:60px solid transparent;
   border-right:60px solid transparent;
   
@@ -375,12 +401,7 @@ justify-content: flex-end;
   position: relative;
 }
 
-.zone_2 h2{
-  width:100%;
-  font-family:var(--font_1);
-  font-size:2.5rem;
-  padding:20px 0;
-}
+
 
 
 .paragraphe2{
@@ -447,7 +468,7 @@ justify-content: flex-end;
 }
 
 .gg-track{
-  left: -380px;
+  left: -350px;  /** ou 380 **/
   bottom: 95px;
   
 }
@@ -561,7 +582,7 @@ justify-content: flex-end;
 .footnav ul {
   display:flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .footnav a:hover{
@@ -583,14 +604,14 @@ li {
   
 }
 
-.footnav2 h2, .reseaux h2{
-  padding: 0 0 20px 0;
+.footnav2 h3, .reseaux h3{
+  padding: 0 0 30px 0;
 }
 
 
 #button {
   width: 120px;
-  background-color: rgb(231, 231, 231);
+  background-color:var(--color_1);
   color: grey;
   border: 2px solid rgb(187, 187, 187);
   border-radius: 20px;
