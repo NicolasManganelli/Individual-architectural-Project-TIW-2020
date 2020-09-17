@@ -65,10 +65,10 @@ header{
   align-items: center;
   background: var(--color_4);
   border-top: solid  var(--color_1);
-  padding:30px 10px;
+  padding:30px;
   width:100%;
   position:fixed;
-  z-index:20;
+  z-index:200;
   
 }
 
@@ -266,20 +266,20 @@ justify-content: flex-end;
   
 }
 
-#article_0 img{
-  float:left;
-  padding:20px;
-
-}
-
-
 #article_0 p{
   padding:10px;
-  
 }
 
+#fig2{
+  float:right;
+  padding:20px;
+}
 
+figcaption{
+  text-align: center;
+}
 
+ 
 
 
 /************************  1er Article  ***********************/
