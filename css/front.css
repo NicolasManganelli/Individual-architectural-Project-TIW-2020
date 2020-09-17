@@ -12,7 +12,7 @@
 2 - Slider 
 3 - Main
 4 - Footer
-
+5 - Mentions légales
 
 ****************************************************************/
 
@@ -64,7 +64,7 @@ header{
   justify-content: space-between;
   align-items: center;
   background: var(--color_4);
-  border-top: solid  var(--color_1);
+  border-top:5px solid  var(--color_3);
   padding:30px;
   width:100%;
   position:fixed;
@@ -88,8 +88,8 @@ header h1{
 
 header img{
   position: absolute;
-  bottom:13px;
-  left:56ch;
+  bottom:15px;
+  left:59ch;
   z-index:10;
   width:55px;
   transform: rotate(-20deg);
@@ -251,6 +251,7 @@ justify-content: flex-end;
   position:relative;
   z-index:100;
   filter: drop-shadow(3px 3px 4px grey);
+  border-top:5px solid  var(--color_3);
 }
 
 #article_0:after{
@@ -277,6 +278,8 @@ justify-content: flex-end;
 
 figcaption{
   text-align: center;
+  font-family: var(--font_1);
+  font-size:1.3rem;
 }
 
  
@@ -319,7 +322,8 @@ figcaption{
   position:relative;
 }
 .paragraphe p{
-  margin-bottom:10px;
+  padding-bottom:10px;
+  
 }
 
 /************************* effet texte caché ***********************/
@@ -354,9 +358,10 @@ figcaption{
   border: 2px solid rgba(75, 32, 35, 0.575);
   border-radius: 20px;
   text-decoration: none;
-  text-transform: uppercase;
   color:var(--color_4);
   font-weight: bold;
+  font-size:1.2rem;
+  font-family: var(--font_1);
   display:block;
   width:100px;
   margin-top:50px;
@@ -754,22 +759,18 @@ li {
   margin: 0;
   padding: 0;
   font-size: 0.75rem;
-  
 }
 
 #footer_footer_nom_du_site {
   text-transform: uppercase;
   font-weight: bold;
-  color: var(--color_2);
+  color: var(--color_3);
 }
 
-#logo_footer {
-  color: red;
-}
+
 
 #mention_legale a {
   font-family: var(--font_2);
-
 }
 
 #creation {
