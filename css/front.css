@@ -21,7 +21,7 @@
 /********  GLOBAL  ********/
 
 .position {
-    width: 100%;
+    width:100%;
     margin: auto;
     font-family:var(--font_2);
     font-size: 1.1rem;
@@ -34,6 +34,11 @@ h2{
   font-size:2.5rem;
   padding:20px 0;
 }
+
+
+
+
+
 
 .position h2:first-letter{
   color:red;
@@ -96,11 +101,7 @@ header img{
 }
 
 h1:first-letter{
-  color:var(--color_3)
-}
-
-.letter:first-letter{
-  color:var(--color_2);
+  color:var(--color_2)
 }
 
 .navbar_header ul {
@@ -198,7 +199,7 @@ justify-content: flex-end;
 
 .img1 {
   background: url(../images/coliseum3.jpg);
-  height: 108rem;
+  height: 70rem;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -207,7 +208,7 @@ justify-content: flex-end;
 
 .img2 {
   background: url(../images/coliseum5.jpg);
-  height: 108rem;
+  height: 70rem;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -216,7 +217,7 @@ justify-content: flex-end;
 
 .img3 {
   background: url(../images/coliseum7.jpg);
-  height: 108rem;
+  height: 70rem;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -259,7 +260,7 @@ justify-content: flex-end;
 	position:absolute;
 	z-index:20;
 	bottom:-30px;
-	left:50%;
+	left:20%;
 	transform:translate(-50%,0);
 	border-top: 30px solid var(--color_5);
 	border-left:60px solid transparent;
@@ -282,7 +283,13 @@ figcaption{
   font-size:1.3rem;
 }
 
- 
+#doc img{
+  display:block;
+  width:80%;
+  margin:auto;
+  text-align:center;
+  padding-left:200px;
+}
 
 
 /************************  1er Article  ***********************/
@@ -301,15 +308,13 @@ figcaption{
 	position:absolute;
 	z-index:20;
 	bottom:-30px;
-	left:50%;
+	left:80%;
 	transform:translate(-50%,0);
 	border-top: 30px solid var(--color_1);
 	border-left:60px solid transparent;
   border-right:60px solid transparent;
   
 }
-
-
 
 .shadow_img{
   box-shadow:4px 4px 10px 1px grey;
@@ -394,7 +399,7 @@ figcaption{
 	position:absolute;
 	z-index:10;
 	bottom:-30px;
-	left:50%;
+	left:20%;
 	transform:translate(-50%,0);
 	border-top: 30px solid var(--color_5);
 	border-left:60px solid transparent;
