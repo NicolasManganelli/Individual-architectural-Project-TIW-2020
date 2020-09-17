@@ -285,7 +285,7 @@ figcaption{
 
 #doc img{
   display:block;
-  width:80%;
+  width:70%;
   margin:auto;
   text-align:center;
   padding-left:200px;
@@ -391,6 +391,9 @@ figcaption{
   background-color: var(--color_5);
   position:relative;
   filter: drop-shadow(3px 3px 4px grey);
+  background: url("../images/backcolisee.jpeg");
+  
+  
 }
 
 
