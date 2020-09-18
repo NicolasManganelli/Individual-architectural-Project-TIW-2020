@@ -288,7 +288,7 @@ figcaption{
   width:70%;
   margin:auto;
   text-align:center;
-  padding-left:200px;
+  
 }
 
 
@@ -391,7 +391,7 @@ figcaption{
   background-color: var(--color_5);
   position:relative;
   filter: drop-shadow(3px 3px 4px grey);
-  background: url("../images/backcolisee.jpeg");
+  
   
   
 }
@@ -415,6 +415,11 @@ figcaption{
 }
 
 
+#article_2 iframe{
+width: 700px;
+height: 350px;
+border:0;
+}
 
 
 .paragraphe2{
@@ -438,53 +443,7 @@ figcaption{
   height:20px;
 }
 
-/******************************  Icon localisation  **********************/
-.gg-track {
-  box-sizing: border-box;
-  position: relative;
-  display: block;
-  transform: scale(var(--ggs,1));
-  width: 15px;
-  height: 15px;
-  border: 2px solid transparent;
-  box-shadow:0 0 0 2px,
-  inset 0 0 0 10px;
-  border-radius: 100px
-}
-.gg-track::after,
-.gg-track::before {
-  content: "";
-  display: block;
-  box-sizing: border-box;
-  position: absolute;
-  border-radius: 3px
-}
-.gg-track::before {
-  border-left: 4px solid;
-  border-right: 4px solid;
-  width: 18px;
-  height: 2px;
-  left: -6px;
-  top: 2px
-}
-.gg-track::after {
-  width: 2px;
-  height: 18px;
-  border-top: 4px solid;
-  border-bottom: 4px solid;
-  left: 2px;
-  top: -6px
-}
-.localisation{
-  position:absolute;
-  color:red;
-}
 
-.gg-track{
-  left: -350px;  /** ou 380 **/
-  bottom: 95px;
-  
-}
 /******************************  Galerie Images  *******************************/
 #galerie{
   width:100%;
