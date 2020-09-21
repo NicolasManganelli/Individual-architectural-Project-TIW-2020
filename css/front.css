@@ -86,7 +86,6 @@ header h1{
   font-size:3rem;
   text-transform: uppercase;
   color:var(--color_1);
-  width:100%;
   position:relative;
   white-space:nowrap;
 }
@@ -391,9 +390,6 @@ figcaption{
   background-color: var(--color_5);
   position:relative;
   filter: drop-shadow(3px 3px 4px grey);
-  
-  
-  
 }
 
 
