@@ -122,42 +122,6 @@ h1:first-letter{
 .navbar_header :nth-child(2){
   border-bottom:2px solid var(--color_1);
 }
-
-/**********************  effet reflet sur la nav ***********************/
-.navbar_header .shine div{
-	position: relative;
-}
-
-.shine div a::before {
-  content: '';
-	position: absolute;
-	top: 0;
-	left: -75%;
-	z-index: 2;
-	display: block;
-	width: 50%;
-	height: 100%;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	-webkit-transform: skewX(-25deg);
-	transform: skewX(-25deg);
-}
-.shine div a:hover::before {
-	-webkit-animation: shine .75s;
-	animation: shine .75s;
-}
-@-webkit-keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-@keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-
-
 /**************  Formulaire de recherche  **************/
 
 .formulaire_recherche{
@@ -194,10 +158,48 @@ justify-content: flex-end;
   color:white;
 }
 
+
+/**********************  effet reflet sur la nav ***********************/
+.navbar_header .shine div{
+	position: relative;
+}
+
+.shine div a::before {
+  content: '';
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.shine div a:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
+
+
 /********************************  2 - Slider  ***********************************/
 
 .img1 {
-  background: url(../images/coliseum3.jpg);
+  background: url(../images/coliseum3-min.jpg);
   height: 70rem;
   background-size: cover;
   background-position: center;
@@ -206,7 +208,7 @@ justify-content: flex-end;
 
 
 .img2 {
-  background: url(../images/coliseum5.jpg);
+  background: url(../images/coliseum5-min.jpg);
   height: 70rem;
   background-size: cover;
   background-position: center;
@@ -215,7 +217,7 @@ justify-content: flex-end;
 
 
 .img3 {
-  background: url(../images/coliseum7.jpg);
+  background: url(../images/coliseum7-min.jpg);
   height: 70rem;
   background-size: cover;
   background-position: center;
