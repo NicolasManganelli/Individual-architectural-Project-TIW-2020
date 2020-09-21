@@ -426,6 +426,8 @@ border:0;
   width:60%;
   line-height: 25px;
   padding:150px 50px;
+  background: url(../images/backolisee2.png)no-repeat ;
+  background-size: cover;
 }
 
 
@@ -438,7 +440,7 @@ border:0;
   font-size: 12px;
 }
 
-.icon_size{
+.paragraphe2 img{
   width:20px;
   height:20px;
 }
