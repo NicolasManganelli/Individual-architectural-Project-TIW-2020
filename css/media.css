@@ -38,13 +38,18 @@
     .paragraphe,
     .paragraphe2{
         width:100%;
+        padding-top: 50px;
     }
+
 
 
     #article_1 img,
     #article_2 iframe{
-        width: 350px;
-        height: 175px;
+        display:block;
+        margin:auto;
+        width: 450px;
+        height: 250px;
+        
     }
 
 
