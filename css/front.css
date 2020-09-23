@@ -20,12 +20,10 @@
 
 /********  GLOBAL  ********/
 
-.position {
-    width:100%;
-    margin: auto;
+body{
     font-family:var(--font_2);
     font-size: 1.1rem;
-    flex-wrap: wrap;
+    
 }
 
 h2{
@@ -300,9 +298,7 @@ figcaption{
 
 /************************  1er Article  ***********************/
 #article_1{
-  padding:20px 50px 0 50px;
-  display:flex;
-  justify-content: space-between;
+  padding:20px 50px;
   background-color: var(--color_1);
   position:relative;
   z-index:50;
@@ -324,18 +320,18 @@ figcaption{
 
 .shadow_img{
   box-shadow:4px 4px 10px 1px grey;
+  display:block;
+  align-items:center;
+  margin:auto;
 }
 
 .paragraphe{    
-  width:60%;
+  padding:50px 20px;;
   line-height: 25px;
-  padding:125px 50px 20px 50px;
   position:relative;
-}
-.paragraphe p{
-  padding-bottom:10px;
   
 }
+
 
 /************************* effet texte caché ***********************/
 #opacity{
@@ -350,13 +346,11 @@ figcaption{
 }
 
 #opacity a{
-  
-  display:block;
-  left:0;
+  display:inline-block;
+  text-align:right;
   position: absolute;
   top: 50%;
-  margin-left: 50px;
-  
+  right:100px;
 }
 
 #opacity.masque{
