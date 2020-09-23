@@ -27,6 +27,19 @@
         justify-content: flex-start;
     }
 
+    #slide
+    .img1,
+    .img2,
+    .img3{ 
+        display:block;
+        width:100%;
+        margin:auto;
+    }
+
+    #article_0 img{
+        display:block;
+        margin:auto;
+    }
 
     #article_1,
     #article_2{
@@ -37,6 +50,7 @@
 
     .paragraphe,
     .paragraphe2{
+        
         width:100%;
         padding-top: 50px;
     }
@@ -47,8 +61,8 @@
     #article_2 iframe{
         display:block;
         margin:auto;
-        width: 450px;
-        height: 250px;
+        width: 500px;
+        height: 300px;
         
     }
 

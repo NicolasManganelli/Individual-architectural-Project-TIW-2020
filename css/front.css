@@ -31,6 +31,7 @@ h2{
   font-family:var(--font_1);
   font-size:2.5rem;
   padding:20px 0;
+  
 }
 
 
@@ -38,7 +39,7 @@ h2{
 
 
 
-.position h2:first-letter{
+body h2:first-letter{
   color:red;
 }
 
@@ -264,7 +265,7 @@ justify-content: flex-end;
 	position:absolute;
 	z-index:20;
 	bottom:-30px;
-	left:20%;
+	left:50%;
 	transform:translate(-50%,0);
 	border-top: 30px solid var(--color_5);
 	border-left:60px solid transparent;
@@ -289,8 +290,8 @@ figcaption{
 
 #doc img{
   display:block;
-  width:70%;
-  margin:auto;
+  width:60%;
+  margin:30px 300px;
   text-align:center;
   
 }
@@ -310,7 +311,7 @@ figcaption{
 	position:absolute;
 	z-index:20;
 	bottom:-30px;
-	left:80%;
+	left:50%;
 	transform:translate(-50%,0);
 	border-top: 30px solid var(--color_1);
 	border-left:60px solid transparent;
@@ -321,7 +322,7 @@ figcaption{
 #article_1 img{
   width: 700px;
   height:350px;
-  box-shadow:4px 4px 10px 1px grey;
+  box-shadow:0 4px 12px 1px grey;
   display:block;
   align-items:center;
   margin:auto;
@@ -403,7 +404,7 @@ figcaption{
 	position:absolute;
 	z-index:10;
 	bottom:-30px;
-	left:20%;
+	left:50%;
 	transform:translate(-50%,0);
 	border-top: 30px solid var(--color_5);
 	border-left:60px solid transparent;
@@ -423,6 +424,9 @@ border:0;
 box-shadow:4px 4px 10px 1px grey;
 }
 
+#article_2 figcaption{
+  padding-top:10px;
+}
 
 .paragraphe2{
   width:60%;
