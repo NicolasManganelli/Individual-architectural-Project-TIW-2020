@@ -30,14 +30,28 @@
 
     #article_1,
     #article_2{
-        width:80%;
         display:block;
+        
+    }
+
+
+    .paragraphe,
+    .paragraphe2{
+        width:100%;
+    }
+
+
+    #article_1 img,
+    #article_2 iframe{
+        width: 350px;
+        height: 175px;
     }
 
 
     .footer{
         display:block;
     }
+
 
     .footnav,
     .reseaux,

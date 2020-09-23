@@ -322,9 +322,13 @@ figcaption{
   
 }
 
-.shadow_img{
+#article_1 img{
+  width: 700px;
+  height:350px;
   box-shadow:4px 4px 10px 1px grey;
 }
+
+
 
 .paragraphe{    
   width:60%;
@@ -422,6 +426,7 @@ figcaption{
 width: 700px;
 height: 350px;
 border:0;
+box-shadow:4px 4px 10px 1px grey;
 }
 
 
