@@ -91,8 +91,8 @@ header h1{
 
 header img{
   position: absolute;
-  bottom:15px;
-  left:59ch;
+  bottom:13px;
+  left:53ch;
   z-index:10;
   width:55px;
   transform: rotate(-20deg);

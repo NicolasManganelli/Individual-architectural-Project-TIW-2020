@@ -1,8 +1,31 @@
-window.addEventListener("load", e => {
-    window.addEventListener("click", e => {
-        if (e.target.id == 'suite') {
-            e.target.parentElement.classList.add("masque");
-            e.preventDefault();
-        }
+/*****************  Partie du texte caché article 1 ********************/
+
+
+    $('#suite').click(function(e){
+        e.preventDefault()
+        $(this).parent().addClass('masque')
+    })
+
+
+    
+
+     
+
+/******************  Disparition et ré-apparition du header au scroll *********/
+
+
+$(document).ready(function(){
+	
+    
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 6200 ) {
+                $('header').fadeOut(500);
+            } else {
+                $('header').fadeIn(500);
+            }
+        });
     });
-});
+})
+
+
