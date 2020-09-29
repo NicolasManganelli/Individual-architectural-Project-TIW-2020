@@ -92,7 +92,7 @@ header h1{
 header img{
   position: absolute;
   bottom:13px;
-  left:53ch;
+  left:55ch;
   z-index:10;
   width:55px;
   transform: rotate(-20deg);
@@ -342,8 +342,6 @@ figcaption{
   font-size:2rem;
   font-family: var(--font_1);
 }
-
-
 
 
 /********************* effet texte caché *****************/
