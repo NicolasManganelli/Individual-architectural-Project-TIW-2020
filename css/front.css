@@ -6,7 +6,7 @@
 }
 
 
-/***********************     Sommaire       *********************
+/***************     Sommaire       ***************
 
 1 - Header 
 2 - Slider 
@@ -14,7 +14,7 @@
 4 - Footer
 5 - Mentions légales
 
-****************************************************************/
+****************************************************/
 
 
 
@@ -43,7 +43,7 @@ body h2:first-letter{
   color:red;
 }
 
-/***********************     Variables       *********************/
+/*******************     Variables       *************/
 
 :root{
   --color_1:#f1eeee;
@@ -56,7 +56,7 @@ body h2:first-letter{
 }
 
 
-/*****************************************************************/
+/*************************************************/
 
 
 
@@ -158,7 +158,7 @@ justify-content: flex-end;
 }
 
 
-/**********************  effet reflet sur la nav ***********************/
+/*************  effet reflet sur la nav **************/
 .navbar_header .shine div{
 	position: relative;
 }
@@ -200,7 +200,7 @@ justify-content: flex-end;
 
 
 
-/********************************  2 - Slider  ***********************************/
+/*********************  2 - Slider  ***********************/
 
 .img1 {
   background: url(../images/coliseum3-min.jpg);
@@ -229,7 +229,7 @@ justify-content: flex-end;
 }
 
 
-/*********************  Animation slider  ********************/
+/****************  Animation slider  **************/
 
 .box1 {
   opacity: 0;
@@ -248,9 +248,9 @@ justify-content: flex-end;
   opacity: 1;
 }
 
-/************************  3 - Main   *************************/
+/********************  3 - Main   **************/
 
-/************************  Article 0  *************************/
+/*******************  Article 0  ***************/
 #article_0{
   padding:20px 80px 40px 50px;
   background-color: var(--color_5);
@@ -297,7 +297,7 @@ figcaption{
 }
 
 
-/************************  1er Article  ***********************/
+/*****************  1er Article  ********************/
 #article_1{
   padding:20px 50px;
   background-color: var(--color_1);
@@ -319,7 +319,7 @@ figcaption{
   
 }
 
-#article_1 img{
+#article_1 video{
   width: 700px;
   height:350px;
   box-shadow:0 4px 12px 1px grey;
@@ -346,7 +346,7 @@ figcaption{
 
 
 
-/************************* effet texte caché ***********************/
+/********************* effet texte caché *****************/
 #opacity{
   display:block;
   position:absolute;
@@ -394,7 +394,7 @@ figcaption{
 
 
 
-/**************************  2ème article  **************************/
+/*******************  2ème article *****************/
 
 #article_2{
   padding:20px 50px 0 50px;
@@ -460,7 +460,7 @@ box-shadow:4px 4px 10px 1px grey;
 }
 
 
-/******************************  Galerie Images  *******************************/
+/*********************  Galerie Images *********************/
 #galerie{
   width:100%;
   padding:20px 50px 40px 50px;
@@ -552,10 +552,9 @@ box-shadow:4px 4px 10px 1px grey;
 }
 
 
+/******************  4 - Footer  *******************/
 
-/*********************************  4 - Footer  ********************************/
-
-.footer {
+#footer {
   box-shadow: 2px -4px 4px grey;
   width: 100%;
   display: flex;
@@ -567,7 +566,7 @@ box-shadow:4px 4px 10px 1px grey;
 
 
 
-#footer_footer_nom_du_site {
+#nom_du_site {
   color: var(--color_2);
   font-weight: bold;
   font-style: italic;
@@ -733,7 +732,7 @@ li {
 }
 
 
-/**************************  Mentions Légales  ***********************/
+/****************  Mentions Légales  ***************/
 
 #cgv {
   width: 100%;
@@ -751,7 +750,7 @@ li {
   font-size: 0.75rem;
 }
 
-#footer_footer_nom_du_site {
+#nom_du_site {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--color_3);
