@@ -69,7 +69,7 @@ header{
   align-items: center;
   background: var(--color_4);
   border-top:5px solid  var(--color_3);
-  padding:30px;
+  padding:30px 50px;
   width:100%;
   position:fixed;
   z-index:200;
@@ -337,6 +337,14 @@ figcaption{
   
 }
 
+.paragraphe h3{
+  padding:20px 0;
+  font-size:2rem;
+  font-family: var(--font_1);
+}
+
+
+
 
 /************************* effet texte caché ***********************/
 #opacity{
@@ -463,6 +471,7 @@ box-shadow:4px 4px 10px 1px grey;
 #galerie img {
   width: 100%;
   height: auto;
+  
 }
 
 #galerie h2 {
@@ -490,12 +499,13 @@ box-shadow:4px 4px 10px 1px grey;
 .location-image {
   line-height: 0;
   overflow: hidden;
+
 }
 
 .location-image img {
   filter: blur(0px);
   transition: filter 0.3s ease-in;
-  transform: scale(1.1);
+  
 }
 
 .location-title {
@@ -517,12 +527,15 @@ box-shadow:4px 4px 10px 1px grey;
   justify-content: center;
 }
 
+
 .location-listing:hover .location-title {
   opacity: 1;
+  
 }
 
 .location-listing:hover .location-image img {
   filter: blur(2px);
+ 
 }
 
 
@@ -530,9 +543,11 @@ box-shadow:4px 4px 10px 1px grey;
 @media (hover: none) { 
   .location-title {
     opacity: 1;
+    transform:scale(1.2);
   }
   .location-image img {
     filter: blur(2px);
+   
   }
 }
 

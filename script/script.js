@@ -19,10 +19,10 @@ $(document).ready(function(){
     
     $(function () {
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 6200 ) {
-                $('header').fadeOut(500);
+            if ($(this).scrollTop() > 6170 ) {
+                $('header').fadeOut(700);
             } else {
-                $('header').fadeIn(500);
+                $('header').fadeIn(700);
             }
         });
     });
