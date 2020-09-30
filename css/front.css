@@ -320,8 +320,8 @@ figcaption{
 }
 
 #article_1 video{
-  width: 700px;
-  height:350px;
+  width: 900px;
+  height:450px;
   box-shadow:0 4px 12px 1px grey;
   display:block;
   align-items:center;
@@ -557,7 +557,7 @@ box-shadow:4px 4px 10px 1px grey;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 50px;
   font-family:var(--font_1);
   font-size:1.2rem;
 }
