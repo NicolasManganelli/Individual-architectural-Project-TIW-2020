@@ -1,4 +1,4 @@
-/*****************  Partie du texte caché article 1 ********************/
+/** Partie du texte caché article 1 **/
 
 
     $('#suite').click(function(e){
@@ -11,7 +11,7 @@
 
      
 
-/******************  Disparition et ré-apparition du header au scroll *********/
+/****  Disparition et ré-apparition du header au scroll ****/
 
 
 $(document).ready(function(){
@@ -19,7 +19,7 @@ $(document).ready(function(){
     
     $(function () {
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 6170 ) {
+            if ($(this).scrollTop() > 6500 ) {
                 $('header').fadeOut(700);
             } else {
                 $('header').fadeIn(700);
