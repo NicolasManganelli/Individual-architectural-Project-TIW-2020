@@ -1,5 +1,5 @@
 @media screen and (max-width:768px){
-/***************************  Header  ******************************/
+/***************  Header  **************/
     header{
         display:block;
     }
@@ -10,7 +10,7 @@
 
     header img{
         width:40px;
-        left:45ch;
+        left:47ch;
         top:69px;
 
 
@@ -28,7 +28,7 @@
     }
 
 
-/******************************* slider  *****************************/
+/******************* slider  **************/
     #slide
     .img1,
     .img2,
@@ -39,7 +39,7 @@
     }
 
 
-/*******************************  main  ******************************/
+/********************  main  ****************/
     #article_0 img{
         display:block;
         margin:auto;
@@ -47,7 +47,7 @@
 
 
     #doc img{
-        width:80%;
+        width:90%;
     }
 
 
@@ -67,12 +67,12 @@
 
 
 
-    #article_1 img,
+    #article_1 video,
     #article_2 iframe{
         display:block;
         margin:auto;
-        width: 500px;
-        height: 300px;
+        width: 530px;
+        height: 350px;
         
     }
 
