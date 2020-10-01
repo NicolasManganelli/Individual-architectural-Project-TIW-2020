@@ -1,17 +1,17 @@
-@media screen and (max-width:768px){
+@media screen and (max-width:1000px){
 /***************  Header  **************/
     header{
         display:block;
     }
 
     header h1{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     header img{
         width:40px;
-        left:47ch;
-        top:69px;
+        left:42ch;
+        top:64px;
 
 
     }
@@ -26,6 +26,8 @@
         padding-top:30px;
         justify-content: flex-start;
     }
+
+    
 
 
 /******************* slider  **************/
@@ -91,4 +93,79 @@
     }
 
     
+}
+
+@media screen and (min-width:600px){
+
+    #burger{
+        display:none;
+    }
+
+    
+}
+
+
+@media screen and (max-width:600px){
+    header img{
+        width:40px;
+        left:42ch;
+        top:64px;
+
+
+    }
+
+
+    .navbar_header ul{
+        display:none
+    }
+
+    /*********************** burger  ************************/
+#burger{
+    float:right;
+    position: relative;
+    margin-top: -35px;
+    border-top:solid 3px var(--color_3);
+    border-bottom: solid 3px var(--color_2);
+    border-radius: 7px;
+    height:40px;
+    width:35px;
+  }
+  
+  #burger::before, #burger::after{
+    content:"";
+    position: absolute;
+    display:block;
+    width:90%;
+    height:2px;
+    background-color: white;
+    left:5%;
+    top:calc(50% - 1px);
+    transition: all .3s;
+  }
+  
+  #burger:not(.close){
+    border-radius: 50%;
+    border-top-color: grey;
+    border-bottom-color: grey;
+    transform: rotate(90deg);
+  
+  }
+  
+  #burger:not(.close):before{
+    transform: rotate(45deg);
+  }
+  
+  
+  #burger:not(.close):after{
+    transform: rotate(-45deg);
+  }
+  
+  
+  
+  
+  #burger:not(.close) div ul{
+    display:block;
+    width:100%;
+    height:100%;
+  }
 }

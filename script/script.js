@@ -1,3 +1,12 @@
+/**************  burger  *************/
+
+jQuery('#burger').click(function () {
+    jQuery(this).toggleClass('close');
+
+})
+
+
+
 /** Partie du texte caché article 1 **/
 
 

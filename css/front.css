@@ -120,7 +120,7 @@ h1:first-letter{
   
 }
 
-.navbar_header :nth-child(2){
+.navbar_header  li:nth-child(2){
   border-bottom:2px solid var(--color_1);
 }
 /**************  Formulaire de recherche  **************/
@@ -200,8 +200,6 @@ justify-content: flex-end;
 }
 
 
-
-
 /*********************  2 - Slider  ***********************/
 
 .img1 {
@@ -277,6 +275,8 @@ justify-content: flex-end;
 
 #article_0 p{
   padding:10px 0;
+  width:80%;
+  margin:auto;
 }
 
 #fig2{
@@ -353,7 +353,7 @@ figcaption{
   position:absolute;
   background: linear-gradient(to top, var(--color_1) 45%,transparent 60%);
   z-index:10;
-  top:25px;
+  top:0;
   right:0;
   width:100%;
   height:100%;
@@ -363,7 +363,7 @@ figcaption{
   display:inline-block;
   text-align:right;
   position: absolute;
-  top: 60%;
+  top: 50%;
   right:100px;
 }
 
