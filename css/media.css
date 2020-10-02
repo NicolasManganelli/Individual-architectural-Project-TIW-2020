@@ -1,4 +1,4 @@
-@media screen and (max-width:1000px){
+@media screen and (max-width:1024px){
 /***************  Header  **************/
     header{
         display:block;
@@ -31,7 +31,7 @@
 
 
 /******************* slider  **************/
-    #slide
+    #slider
     .img1,
     .img2,
     .img3{ 
@@ -95,76 +95,138 @@
     
 }
 
-@media screen and (min-width:600px){
 
-    #burger{
-        display:none;
+
+
+
+
     }
 
-    
-}
-
-
-@media screen and (max-width:600px){
     header img{
-        width:40px;
-        left:42ch;
-        top:64px;
-
+        width:35px;
+        left:36ch;
+        top:55px;
     }
-
 
     .navbar_header ul{
         display:none
     }
 
-    /*********************** burger  ************************/
-#burger{
-    float:right;
-    position: relative;
-    margin-top: -35px;
-    border-top:solid 3px var(--color_3);
-    border-bottom: solid 3px var(--color_2);
-    border-radius: 7px;
-    height:40px;
-    width:35px;
-  }
+    /******************  burger  ****************/
+    #burger{
+        float:right;
+        position: relative;
+        margin-top: -30px;
+        right:-35px;
+        border-top:solid 3px var(--color_3);
+        border-bottom: solid 3px var(--color_2);
+        border-radius: 7px;
+        height:30px;
+        width:30px;
+    }
+    
+    #burger::before, #burger::after{
+        content:"";
+        position: absolute;
+        display:block;
+        width:90%;
+        height:2px;
+        background-color: white;
+        left:5%;
+        top:calc(50% - 1px);
+        transition: all .3s;
+    }
+    
+    #burger:not(.close){
+        border-radius: 50%;
+        border-top-color: grey;
+        border-bottom-color: grey;
+        transform: rotate(90deg);
+    
+    }
+    
+    #burger:not(.close):before{
+        transform: rotate(45deg);
+    }
+    
+    
+    #burger:not(.close):after{
+        transform: rotate(-45deg);
+    }
+    
+/*
+    #burger:not(.close) div ul{
+        display:block;
+        width:100%;
+        height:100%;
+    }
+
+*/
+    #burger:not(.close) + #menu-listing{
+		display: block;
+		background-color: var(--color_4);
+		height: 100vh;
+		width: 100vw;
+		z-index: 1;
+		text-align: center;
+	}
+/**************************************************/
+
+    .formulaire_recherche{
+        width:100%;
+        padding-top:30px;
+        justify-content: flex-start;
+    }
+
+
+    #slider{
+        width:100%
+    }
+
+
+    h2{
+        text-align: center;
+    }
   
-  #burger::before, #burger::after{
-    content:"";
-    position: absolute;
-    display:block;
-    width:90%;
-    height:2px;
-    background-color: white;
-    left:5%;
-    top:calc(50% - 1px);
-    transition: all .3s;
-  }
-  
-  #burger:not(.close){
-    border-radius: 50%;
-    border-top-color: grey;
-    border-bottom-color: grey;
-    transform: rotate(90deg);
-  
-  }
-  
-  #burger:not(.close):before{
-    transform: rotate(45deg);
-  }
-  
-  
-  #burger:not(.close):after{
-    transform: rotate(-45deg);
-  }
-  
-  
-  
-  
-  #burger:not(.close) div ul{
-    display:block;
-    width:100%;
-    height:100%;
-  }
+
+
+    #article_1 video,
+    #article_2 iframe{
+        display:block;
+        margin:auto;
+        width: 450px;
+        height: 400px;
+    }
+
+
+    #doc img{
+        width:100%;
+        margin:auto;
+
+    }
+
+
+    #opacity a{
+        top:55%
+
+    }
+
+
+    .paragraphe2{
+        width:120%;
+        padding-top: 50px;
+        padding:50px 33px
+    }
+
+    #galerie{
+        padding:10px 10px 10px 0;
+    }
+
+
+
+
 }
+
+
+
+
