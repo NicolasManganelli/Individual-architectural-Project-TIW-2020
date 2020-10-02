@@ -42,16 +42,22 @@
 
 
 /********************  main  ****************/
-    #article_0 img{
+    
+
+
+    #doc img{
         display:block;
+        width:70%;
         margin:auto;
     }
 
 
-    #doc img{
-        width:90%;
+    #fig2{
+        display:block;
+        width:50%;
+       
+        
     }
-
 
     #article_1,
     #article_2{
@@ -73,7 +79,7 @@
     #article_2 iframe{
         display:block;
         margin:auto;
-        width: 530px;
+        width: 600px;
         height: 350px;
         
     }
@@ -98,14 +104,16 @@
 
 
 
+@media screen and (max-width:600px){
 
-
-    
+    header h1{
+        font-size: 1.5rem;
+    }
 
     header img{
         width:35px;
-        left:36ch;
-        top:55px;
+        left:30ch;
+        top:54px;
     }
 
     .navbar_header ul{
@@ -116,10 +124,10 @@
     #burger{
         float:right;
         position: relative;
-        margin-top: -30px;
+        margin-top: -25px;
         right:-35px;
-        border-top:solid 3px var(--color_3);
-        border-bottom: solid 3px var(--color_2);
+        border-top:solid 3px green;
+        border-bottom: solid 3px red;
         border-radius: 7px;
         height:30px;
         width:30px;
@@ -154,22 +162,24 @@
         transform: rotate(-45deg);
     }
     
-/*
-    #burger:not(.close) div ul{
-        display:block;
-        width:100%;
-        height:100%;
+
+    #burger:not(.close) + div #menu-listing{
+		display: block;
+		
+		height: 20vh;
+		width: 100%;
+        z-index: 1;
+        align-items: center;
+		text-align: center;
+    }
+    
+    .navbar_header li:nth-child(2){
+        border:none;
     }
 
-*/
-    #burger:not(.close) + #menu-listing{
-		display: block;
-		background-color: var(--color_4);
-		height: 100vh;
-		width: 100vw;
-		z-index: 1;
-		text-align: center;
-	}
+    .navbar_header ul{
+        margin-top:30px
+    }
 /**************************************************/
 
     .formulaire_recherche{
@@ -184,23 +194,33 @@
     }
 
 
-    h2{
+    h2, #galerie h2{
+        font-size:2rem;
         text-align: center;
     }
   
 
+    
+    #fig2{
+        display:block;
+        width:100%;
+       
+        
+    }
+
+    
 
     #article_1 video,
     #article_2 iframe{
         display:block;
         margin:auto;
-        width: 450px;
-        height: 400px;
+        width: 300px;
+        height: 200px;
     }
 
 
     #doc img{
-        width:100%;
+        width:120%;
         margin:auto;
 
     }

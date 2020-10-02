@@ -338,7 +338,15 @@ figcaption{
   position:relative;
   width:70%;
   margin:auto; 
+  max-height:50vh;
+  transition:all 1s;
+  overflow:hidden;
 }
+
+.paragraphe.visible{
+  max-height:1000vh;
+}
+
 
 .paragraphe h3{
   padding:20px 0;
@@ -482,6 +490,11 @@ box-shadow:4px 4px 10px 1px grey;
   padding:20px 0;
   
 }
+
+.location-listing h3{
+  font-family: var(--font_1);
+}
+
 
 .grid-container {
   display: grid;
