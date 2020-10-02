@@ -10,7 +10,7 @@ jQuery('#burger').click(function () {
 /** Partie du texte caché article 1 **/
 
 
-$('.suite').click(function(e){
+$('#suite').click(function(e){
     e.preventDefault()
     $(this).parent().addClass('masque');
     $(this).parent().parent().addClass('visible');
